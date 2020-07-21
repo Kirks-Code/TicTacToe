@@ -1,0 +1,323 @@
+body {
+	background-color: #000000;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+h1 {
+	font-size: 5em;
+	border: 2px solid #eff3c6 ;
+	color : #511845;
+}
+
+table {
+	width: 75%;
+	margin: auto;
+	margin-top: 20px;
+	font-family: 'Arimo', sans-serif;
+	font-size: 70px;
+}
+
+td {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	background-color: #c70039;
+	color: white;
+	border: none;
+	border-radius: 10%;
+	box-shadow: 0 .03em .08em rgba(0,0,0, 0.5);
+	margin: 8px;
+	transition: background-color 0.2s ease;
+}
+
+td:hover {
+	cursor: pointer;
+	background-color: #511845;
+}
+
+.selected {
+	background-color: #511845;
+}
+
+tr {
+	list-style-type: none;
+	width: 500px;
+}
+
+#selection {
+	height: 60px;
+	font-size: 3em;
+	color: red;
+}
+
+button {
+	border: none;
+	background: solid;
+	background-color: #ffd868;
+	width: 50px;
+	height: 50px;
+	margin: .3em;
+	border-radius: 50%;
+}
+
+.hover:hover {
+	background: purple;
+	color: white;
+}
+
+:active {
+	outline: none;
+}
+
+:focus {
+	outline: none;
+}
+
+.seed {
+	background: #F38630;
+	color: white;
+}
+
+
+
+#result {
+	padding-top: 20px;
+	height: 40px;
+	font-size: 3em;
+	font-family: monaco; 
+	color :#900c3f;
+	animation: blinkingText 1.2s infinite;
+}
+
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+
+
+
+@media only screen and (min-device-width: 1024px) {
+	td {
+		width: 140px;
+		height: 140px;
+		line-height: 140px;
+		font-size: 140px;
+	}
+}
+
+@media all and (min-width:960px) and (max-width: 1024px) {
+  
+
+  	td {
+		width: 130px;
+		height: 130px;
+		line-height: 130px;
+		font-size: 130px;
+	}
+    #result{
+    	font-size: 3em;
+    }
+    button {
+    	width: 40px;
+	height: 40px;
+	font-size: 30px;
+
+
+    }
+
+}
+
+
+@media all and (min-width:801px) and (max-width: 959px) {
+  
+
+  	td {
+		width: 120px;
+		height: 120px;
+		line-height: 120px;
+		font-size: 120px;
+	}
+    #result{
+    	font-size: 2em;
+    }
+    button {
+    	width: 40px;
+	height: 40px;
+	font-size: 30px;
+
+
+    }
+
+}
+
+
+
+
+@media all and (min-width: 769px) and (max-width: 800px) {
+  
+
+  	td {
+		width: 120px;
+		height: 120px;
+		line-height: 120;
+		font-size: 120px;
+	}
+    #result{
+    	font-size: 2em;
+    }
+    button {
+    	width: 40px;
+	height: 40px;
+	font-size: 30px;
+
+
+    }
+
+}
+
+
+
+
+@media all and (min-width:569px) and (max-width: 768px) {
+  
+
+  	td {
+		width: 120px;
+		height: 120px;
+		line-height: 120px;
+		font-size: 120px;
+	}
+    #result{
+    	font-size: 2em;
+    }
+    button {
+    	width: 40px;
+	height: 40px;
+	font-size: 30px;
+
+
+    }
+
+}
+
+
+@media all and (min-width:380px) and (max-width: 568px) {
+  
+
+  	td {
+		width: 80px;
+		height: 80px;
+		line-height: 80px;
+		font-size: 80px;
+	}
+    #result{
+    	font-size: 2em;
+    }
+    button {
+    	width: 40px;
+	height: 40px;
+	font-size: 30px;
+
+
+    }
+
+}
+
+
+@media all and (min-width:318px) and (max-width:379px) {
+  
+
+  	td {
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		font-size: 60px;
+	}
+    #result{
+    	font-size: 2em;
+    }
+    button {
+    	width: 40px;
+	height: 40px;
+	font-size: 30px;
+
+
+    }
+
+}
+
+
+
+
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+@keyframes blinkingText{
+	0%{         color: #000; }
+	25%{  color: purple; }
+	49%{  color: #000; } 
+	55%{ color : #900c3f; }
+	60%{ color : white; } 
+	99%{ color : #900c3f; }  
+	100%{ color: #000; }   
+}
+
+
+}
